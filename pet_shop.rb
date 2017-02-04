@@ -4,8 +4,11 @@ end
 
 def total_cash (money)
  return money[:admin][:total_cash]
-   end
+end
 
+def add_or_remove_cash(cash, added)
+  return cash[:admin][:total_cash] -= added
+end   
 
 
 
