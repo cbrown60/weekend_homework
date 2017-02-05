@@ -49,3 +49,11 @@ end
 return missing_pets
 end
 
+def find_pet_by_name (shop, pet)
+  
+  for x in shop[:pets]
+    return x if x[:name] == pet 
+end
+end
+
+
