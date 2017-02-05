@@ -39,4 +39,13 @@ end
 return pets_out_there
 end
 
+def pets_by_breed (shop, breed)
+missing_pets = []
+
+for x in shop[:pets]
+  missing_pets.push (x) if x[:breed] == breed
+
+end
+return missing_pets
+end
 
