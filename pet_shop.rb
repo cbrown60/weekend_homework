@@ -56,4 +56,14 @@ def find_pet_by_name (shop, pet)
 end
 end
 
+def find_pet_by_name (shop, pet)
+
+  for x in shop[:pets]
+    return x if x[:name] == pet
+     end 
+
+     return nil
+end
+
+
 
